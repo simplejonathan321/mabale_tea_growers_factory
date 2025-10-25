@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mabale Growers Tea Factory Login</title>
+  <link rel="icon" type="image/x-icon" href="mabaleimages/mabalelogo.jpg">
+   <link rel="stylesheet" href="css.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav>
+  <a href="#"><img src="mabaleimages/mabalelogo.jpg" alt="Mab" class="logo" /></a>
+
+  <div class="menu-toggle" id="menu-toggle">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+
+  <div class="navbar-links" id="navbar-links">
+    <a href="index.html">Home</a>
+    <div class="dropdown">
+      <button class="dropbtn">About us</button>
+      <div class="dropdown-content">
+        <a href="History.html">Our History</a>
+        <a href="Team.html">Board Members</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Services</button>
+      <div class="dropdown-content">
+        <a href="product.html">Products</a>
+        <a href="hospital.html">Our Hospital</a>
+        <a href="Our school.HTML">Our school</a>
+      </div>
+    </div>
+    <a href="#contact">Contact us</a>
+  </div>
+</nav>
+
+<section class="banner">
+  <img src="mabaleimages/cup1.webp" alt="Tea Plantation" class="banner-img">
+  <div class="banner-text">
+    <h1>Welcome to Mabale Growers Tea Factory</h1>
+    <p>Location and contacts</p>
+  </div>
+</section>
+
+<div class="body1">
+<div class="container">
+
+  <div class="contact-section">
+    <h2>Mabale Growers Tea LTD</h2>
+    <hr>
+    <h2>Factory</h2>
+    <p><strong>Location:</strong> Mabale Growers Tea Factory</p>
+    <p><strong>Along:</strong>Kagorogoro-kijura road</p>
+    <p><strong>Address:</strong> P.O.BOX 233</p>
+    <p><Kyenjojo-Uganda></Kyenjojo-Uganda></p>
+    <hr>
+    <p><strong>Email:</strong> info@mabalegrowerstea.com</p>
+    <p><strong>Phone:</strong> +256-700-123456</p><br>
+    <hr>
+
+    <div class="social-icons">
+      <h2>Follow us</h2>
+      <a href="#"><img src="https://img.icons8.com/ios-filled/50/000000/facebook-new.png" alt="Facebook"/></a>
+      <a href="#"><img src="https://img.icons8.com/ios-filled/50/000000/twitter.png" alt="Twitter"/></a>
+      <a href="#"><img src="https://img.icons8.com/ios-filled/50/000000/instagram-new.png" alt="Instagram"/></a>
+    </div>
+  </div>
+
+  <div class="login-section">
+    <h2>Login</h2>
+    <form id="loginForm">
+      <div class="form-group">
+        <label for="username">Username or Email</label>
+        <input type="text" id="username" required />
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="text" id="phone" required />
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Enter a strong pasword" />
+      </div>
+
+      <div class="show-password">
+        <input type="checkbox" onclick="togglePassword()" /> Show Password
+      </div>
+
+      <div class="form-group">
+        <label>Select Your Role:</label>
+        <div class="radio-group">
+          <label><input type="radio" id="addim" name="role" value="Addim" required /> Addim</label>
+          <label><input type="radio" id="growers" name="role" value="Growers" required /> Growers</label>
+        </div>
+      </div>
+      
+
+      <div class="form-group">
+        <label for="comment">Comment</label>
+        <textarea id="comment" rows="3" placeholder="Enter your message..."></textarea>
+      </div>
+
+      <div class="captcha-box">
+        <label id="captchaQuestion">What is <span id="num1"></span> + <span id="num2"></span>?</label>
+        <input type="text" id="captchaAnswer" required />
+      </div>
+
+      <button type="submit" class="submit-btn">Login</button>
+
+      <div style="margin-top: 15px;">
+        <a href="#">Forgot Password?</a> | <a href="#">Register</a>
+      </div>
+    </form>
+  </div>
+</div>
+</div>
+
+
+
+<!-- New Map Section -->
+<section class="map-section">
+  <div class="map-container">
+    <h2>Find Us on the Map</h2>
+    <div class="map-embed">
+      <!-- Replace the src with your actual Google Maps embed URL -->
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989
+      .5080297599507!2d30.4620087!3d0.7145756000000001!2m3!1f0!2f0!3f0!3m2!1i1024
+      !2i768!4f13.1!3m3!1m2!1s0x1763c6cb29302433%3A0x4439ae11901e2580!2sMabale%20Growers%20Tea
+      %20Factory%20Ltd!5e0!3m2!1sen!2sug!4v1745313911520!5m2!1sen!2sug" width="1400" height="450" style="border:0;
+      " allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <p class="map-directions">
+      <strong>Directions:</strong> Located along Kagorogoro-kijura road in Kyenjojo, Uganda.
+       Look for our main factory entrance with the Mabale Growers Tea Factory sign.
+    </p>
+  </div>
+</section>
+
+</body>
+<footer>
+  <div class="footer-content">
+    <div class="footer-section">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#">LinkedIn</a></li>
+        <li><a href="#about">Facebook</a></li>
+        <li><a href="#products">Instagram</a></li>
+        <li><a href="#contact">Twitter</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h3>News</h3>
+      <ul>
+        <li><a href="#">Latest Updates from Mabale Growers</a></li>
+        <li><a href="#">Sustainability Initiatives</a></li>
+        <li><a href="#">Community Engagement</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h3>Our Partners</h3>
+      <ul>
+        <li><a href="#">Mpanga T/F</a></li>
+        <li><a href="#">Temteco T/F</a></li>
+        <li><a href="#">Rusekere T/F</a></li>
+        <li><a href="#">Kyabaranga</a></li>
+      </ul>
+    </div>
+  </div>
+  <p>&copy; 2025 Mabale Growers Tea Factory. All rights reserved.</p>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  // Password toggle
+  function togglePassword() {
+    const password = document.getElementById("password");
+    password.type = password.type === "password" ? "text" : "password";
+  }
+
+  // Generate simple math CAPTCHA
+  let num1 = Math.floor(Math.random() * 10) + 1;
+  let num2 = Math.floor(Math.random() * 10) + 1;
+  document.getElementById("num1").textContent = num1;
+  document.getElementById("num2").textContent = num2;
+
+  // Handle form submit
+  document.getElementById("loginForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+    const answer = parseInt(document.getElementById("captchaAnswer").value);
+    if (answer !== num1 + num2) {
+      alert("Verification failed! Please answer the CAPTCHA correctly.");
+    } else {
+      alert("Login successful! Thank you for verifying.");
+    }
+  });
+
+  // Menu toggle script for mobile
+  document.getElementById("menu-toggle").addEventListener("click", function() {
+    const navbarLinks = document.getElementById("navbar-links");
+    navbarLinks.classList.toggle("active");
+  });
+</script>
+
+
+</html>
